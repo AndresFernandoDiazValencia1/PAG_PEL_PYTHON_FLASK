@@ -1,0 +1,81 @@
+/* ESTILOS  DE SECCION BUSCAR PELÍCULAS EN LA PAGINA PELÍCULAS , INCLUYE 
+FAVORITAS Y TENDENCIAS ------*/
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.contenedor.pelicula {
+  text-align: center;
+}
+.contenedor .pelicula .titulo {
+  font-size: 18px;
+  font-weight: 600;
+}
+.contenedor .pelicula .poster {
+  width: 100%;
+  border: 4px solid orangered;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+/* PAGINACIÓN =================================================================*/
+
+.paginacion {
+  padding: 0 0 60px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.paginacion button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  width: 100px;
+  height: 40px;
+  background: #1c1c1c;
+  color: orangered;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+.paginacion button:hover {
+  background: rgb(230, 77, 21);
+  color: #1c1c1c;
+}
+
+/* RESPONSIVE=================================================================*/
+
+@media screen and (max-width: 728px) {
+  .contenedor {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .contenedor.pelicula {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  .contenedor {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  .contenedor {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="../static/css/peliculas.css" />
+    <link rel="stylesheet" href="../static/css/conexion_API_p.css" />
+    <link rel="stylesheet" href="../static/css/buscar_pelis.css" />
+    <link rel="shortcut icon" href="../static/img/l1.jpg" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--link de fontawesome---------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!--hasta aquí ------>
+  </head>
+  <body>
+    <header>
+      <div class="up">
+        <!--<a href="#"><img src="img/h2.jpg" class="logot" alt=""></a>-->
+        <a href="/" class="logo">MAVENS</a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/cartelera">Cartelera</a></li>
+            <li><a href="/peliculas">Peliculas</a></li>
+            <li><a href="/registro">registro</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="other-links">
+        <button id="btn-login"><a href="/login">Inicio</a></button>
+        <button id="btn-signup"><a href="/registro">Registro</a></button>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+
+    <!--SECCIÓN PELÍCULAS -------------------------------->
+
+    <div class="container">
+      <div class="search">
+        <input type="text" placeholder="Buscar peliculas..." />
+        <button>Buscar</button>
+      </div>
+      <div class="movies-container favorites">
+        <h1>Tus favoritas</h1>
+        <div class="movies-grid">
+          <!--CAJA 1-------------------------------------->
+          <!--     <div class="card" data-id="123456">
+            <div class="img">
+              <img src="img/m1.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h2>movie name</h2>
+              <div class="single-info">
+                <span>relase date: </span>
+                <span>21-01-2023</span>
+              </div>
+              <div class="single-info">
+                <span>relase date: </span>
+                <span>21-01-2023</span>
+              </div>
+            </div>
+          </div>     -->
+          <!--HASTA AQUÍ -->
+
+          <!--CAJA 2-------------------------------------->
+        </div>
+      </div>
+
+      <!--TRNDING-------------------------------------->
+
+      <div class="movies-container trending">
+        <h1>TENDENCIAS</h1>
+        <div class="movies-grid">
+          <!--CAJA 1-------------------------------------->
+           <!--   <div class="card" data-id="123456">
+            <div class="img">
+              <img src="img/m1.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h2>movie name</h2>
+              <div class="single-info">
+                <span>relase date: </span>
+                <span>21-01-2023</span>
+              </div>
+              <div class="single-info">
+                <span>relase date: </span>
+                <span>21-01-2023</span>
+              </div>
+            </div>  -->
+          </div>
+          <!--HASTA AQUÍ -->
+
+          <!--CAJA 2-------------------------------------->
+        </div>
+      </div>
+    </div>
+
+    <!--POPUP PARA VER INFORMACIÓN Y TRAILER -------------------------------->
+
+    <div class="popup-container">
+      <!--  <span class="x-icon">&#10006;</span>
+      <div class="content">
+        <div class="left">
+          <div class="poster-img">
+            <img src="https://unsplash.it/500/1000" alt="" />
+          </div>
+          <div class="single-info">
+            <span class="name1">Agregar a favoritos:</span>
+            <span class="heart-icon">&#9829;</span>
+          </div>
+        </div>
+        <div class="right">
+          <h1>Titulo pelicula</h1>
+          <h3>Slogan pelicula</h3>
+          <div class="single-info-container">
+            <div class="single-info">
+              <span>Idioma:</span>
+              <span>English</span>
+            </div>
+            <div class="single-info">
+              <span>Duracion:</span>
+              <span>120 minutos</span>
+            </div>
+            <div class="single-info">
+              <span>Calificacion:</span>
+              <span>10 / 10</span>
+            </div>
+            <div class="single-info">
+              <span>Presupuesto:</span>
+              <span>1350000</span>
+            </div>
+            <div class="single-info">
+              <span>Lanzada en:</span>
+              <span>05-07-2022</span>
+            </div>
+          </div>
+          <div class="genres">
+            <h2>Generos</h2>
+            <ul>
+              <li>Accion</li>
+              <li>Drama</li>
+              <li>Romance</li>
+            </ul>
+          </div>
+          <div class="overview">
+            <h2>descripción general</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo vel
+              ipsum ab optio debitis ex iste magni et aliquam pariatur.
+            </p>
+          </div>
+          <div class="trailer">
+            <h2>Trailer</h2>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Kmo8NLKkfcQ"
+              title="Youtube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypt-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>  -->
+    </div>
+
+    <!--POPUP PARA VER INFORMACIÓN Y TRAILER HASTA AQUÍ -------------------------------->
+
+    <!--SECCIÓN PELÍCULAS HASTA AQUÍ -------------------------------->
+
+    <div class="copyright">
+      <p>
+        &#169; Pagina creada por:
+        <a
+          href="https://api.whatsapp.com/send?phone=573123353062&text=Hola, estoy interesado en una pagina."
+          target="_blank"
+          ><span>Andrés Diaz.</span></a
+        >
+        Todos los derechos reservados.
+      </p>
+      <p>| TMDB | AGRADECIMIENTOS, CREDITOS.</p>
+    </div>
+ <!-- REDES SOCIALES -------------------------------------------------->
+ <div class="redes">
+  <li>
+    <a
+      href="https://api.whatsapp.com/send?phone=573138032210&text=Hola, me interesa el servicio."
+      target="_blank"
+      ><i class="fab fa-whatsapp"></i
+    ></a>
+  </li>
+  <li>
+    <a href="mailto:ffonte422@gmail.com" target="_blank"
+      ><i class="fas fa-envelope"></i
+    ></a>
+  </li>
+</div>
+
+
+
+
+    <script src="../static/js/peliculas.js"></script>
+    <script src="../static/js/conexion_API_p.js"></script>
+    <script src="../static/js/pelis_buscar.js"></script>
+  </body>
+</html>

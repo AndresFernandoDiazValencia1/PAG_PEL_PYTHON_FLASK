@@ -1,0 +1,159 @@
+<!-- {% extends 'lay.html' %} {% block title %} Home {% endblock %} {% block content
+%} -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='css/home.css')}}"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{url_for('static', filename='img/l1.jpg')}}"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <div class="encabezado">
+      <!--HEADER ------------------------------------------------>
+
+      <header>
+        <nav>
+          <a href="/"><label for="" class="logo">MAVEN </label></a>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/login">Login</a>
+            </li>
+            <li>
+              <a href="/registro">Registro</a>
+            </li>
+          </ul>
+        </nav>
+        <section>
+          <div class="contene">
+            <h1>Encuentra <span>Peliculas</span></h1>
+            <h3>Tus favoritas</h3>
+            <div class="rate">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+
+            <div class="subtitulos">
+              Accion <span>/</span> Drama <span>/</span> Suspenso
+            </div>
+
+            <div class="btns">
+              <a href="/cartelera"
+                ><button><i class="bi bi-play-fill"></i>Ingresar</button></a
+              >
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              temporibus repudiandae pariatur at incidunt nulla. Molestias
+              consequuntur rem corrupti commodi. Adipisci nihil eius dolore
+            </p>
+          </div>
+        </section>
+
+        <!--TARJETAS------------------------------------------------>
+
+        <div class="cards">
+          <div class="card">
+            <img src="../static/img/t1.jpg" alt="" />
+            <div class="conte">
+              <h4>velocidad 2016</h4>
+              <p>accion, drama</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../static/img/m1.jpg" alt="" />
+            <div class="conte">
+              <h4>infantil 2016</h4>
+              <p>animada</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../static/img/t2.png" alt="" />
+            <div class="conte">
+              <h4>velocidad 2016</h4>
+              <p>accion, drama</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../static/img/m2.jpg" alt="" />
+            <div class="conte">
+              <h4>infantil 2016</h4>
+              <p>aventura</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../static/img/m3.jpg" alt="" />
+            <div class="conte">
+              <h4>animada 2016</h4>
+              <p>drama</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../static/img/m4.jpg" alt="" />
+            <div class="conte">
+              <h4>niños 2016</h4>
+              <p>accion, humor</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../static/img/m5.jpg" alt="" />
+            <div class="conte">
+              <h4>dibujos 2016</h4>
+              <p>comedia, historieta</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../static/img/m6.jpg" alt="" />
+            <div class="conte">
+              <h4>infantil 2016</h4>
+              <p>alegria</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../static/img/m7.jpg" alt="" />
+            <div class="conte">
+              <h4>animada 2016</h4>
+              <p>aventura, comedian</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../static/img/m8.jpg" alt="" />
+            <div class="conte">
+              <h4>infantil 2016</h4>
+              <p>accion, Suspenso</p>
+            </div>
+          </div>
+          <!--TARJETAS HASTA AQUÍ .. 10 EN TOTAL ------------------------------------------------>
+        </div>
+      </header>
+    </div>
+  </body>
+  {% endblock %}
+</html>

@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald";
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --main-color: #ffb43a;
+  --hover-color: hsl(37, 94%, 54%);
+  --body-color: #1e1e2a;
+  --container-color: #2d2e37;
+  --text-color: #fcfeff;
+  --main-color: #647bff;
+  --body-color: #090a1a;
+  --container-color: #171b3c;
+  --heading-color: #222231;
+  --box-color: #0d0f26;
+  --bg-color: #fff;
+  --border-color: #4a235a;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  color: var(--text-color);
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(255, 68, 0, 0.938);
+}
+
+section {
+  padding: 3rem 0 2rem;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1060px;
+  margin: auto;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url("../img/bod4.jpg") no-repeat center center/cover;
+  backdrop-filter: blur(5px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+header {
+  width: 95%;
+  margin: 30px auto;
+  height: 550px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/heda.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgb(255, 68, 0, 0.938);
+}
+
+/*aqui en UP es donde paso todos los elementos a de la navegacion desde la izquierda hacia el otro lado ...
+queda todo a la derecha .. con el justify- content space-between*/
+
+.up {
+  max-width: 85%;
+  width: 1700px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.up a {
+  text-decoration: none;
+}
+
+/*hasta aquí */
+
+.logo {
+  font-size: 20px;
+  color: orangered;
+  font-weight: bold;
+}
+
+.logo:hover {
+  color: red;
+}
+
+.nav-menu {
+  width: 350px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li {
+  list-style: none;
+  padding: 3px 7px;
+}
+
+.nav-menu li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: orangered;
+
+  text-decoration: none;
+}
+
+.nav-menu li a:hover {
+  color: red;
+}
+
+/*REGISTRO LOGIN USER CART-SHOPING*/
+
+.other-links {
+  margin-top: 50px;
+  *margin-right: 33px;
+}
+
+.other-links i {
+  color: rgba(253, 0, 0, 1);
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.icons {
+  padding: 80px 40px 40px 70px;
+  /*ARRIBA              DERECHA  */
+  gap: 30px;
+  font-size: 20px;
+  color: orangered;
+  display: flex;
+  cursor: pointer;
+}
+.icons:hover {
+  color: red;
+}
+
+#btn-login {
+  width: 100px;
+  background: orangered;
+  border: 3px solid orangered;
+  color: #1c1c1c;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 5vh;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#btn-login a {
+  text-decoration: none;
+  color: #1c1c1c;
+  transition: 0.5s ease;
+}
+
+#btn-login a:hover {
+  color: orangered;
+}
+
+#btn-login:hover {
+  background-color: #2d2e37;
+}
+
+#btn-signup {
+  width: 100px;
+  background: orangered;
+  border: 3px solid orangered;
+  color: #1c1c1c;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 5vh;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#btn-signup a {
+  text-decoration: none;
+  color: #1c1c1c;
+  transition: 0.5s ease;
+}
+
+#btn-signup a:hover {
+  color: orangered;
+}
+
+#btn-signup:hover {
+  background-color: #2d2e37;
+}
+
+/*RESPONSIVE DE LA NAVEGACIÓN y DEL REGISTRO LOGIN USER CART-SHOPING*/
+
+@media screen and (max-width: 700px) {
+  .other-links {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .other-links i {
+    font-size: 20px;
+  }
+  .icons {
+    gap: 50px;
+    margin-right: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #btn-login {
+    margin-right: 15px;
+    width: 60px;
+    height: 5vh;
+    font-size: 12px;
+  }
+
+  #btn-signup {
+    width: 60px;
+    height: 5vh;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .other-links {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .other-links i {
+    *flex-direction: row;
+    font-size: 20px;
+  }
+
+  #btn-login {
+    width: 60px;
+    height: 5vh;
+    font-size: 12px;
+  }
+
+  #btn-signup {
+    width: 60px;
+    height: 5vh;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .up {
+    width: 100%;
+    height: 100px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    width: 350px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nav-menu li a {
+    font-size: 16px;
+    font-weight: bold;
+
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-menu {
+    *padding-top: 40px;
+    *display: flex;
+    *flex-direction: column;
+    *align-items: center;
+  }
+  .nav-menu li a {
+    font-size: 14px;
+    font-weight: bold;
+
+    text-decoration: none;
+  }
+  .other-links i {
+    font-size: 18px;
+  }
+
+  #btn-login {
+    width: 70px;
+    height: 5vh;
+  }
+
+  #btn-signup {
+    width: 70px;
+    height: 5vh;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .up {
+    margin-top: 30px;
+  }
+  .logo {
+    *margin-bottom: 40px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    padding-top: 90px;
+    *margin-top: 30px;
+  }
+  .nav-menu li {
+    *margin-top: 10px;
+    list-style: none;
+    padding: 1px 0px;
+  }
+
+  .nav-menu li a {
+    *margin-top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+
+    text-decoration: none;
+  }
+  .other-links {
+    margin-top: 110px;
+  }
+  .other-links i {
+    margin-left: 15px;
+  }
+  .icons {
+    *display: block;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .other-links {
+    margin-right: 10px;
+  }
+
+  .other-links i {
+    font-size: 18px;
+  }
+
+  #btn-login {
+    margin-right: 12px;
+    width: 60px;
+    height: 5vh;
+    font-size: 12px;
+  }
+
+  #btn-signup {
+    width: 60px;
+    height: 5vh;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .other-links {
+    margin-right: 10px;
+  }
+
+  .other-links i {
+    font-size: 12px;
+  }
+
+  #btn-login {
+    width: 40px;
+    height: 5vh;
+    font-size: 8px;
+  }
+
+  #btn-signup {
+    width: 50px;
+    height: 5px;
+    font-size: 8px;
+  }
+}
+/*RESPONSIVE DEL REGISTRO LOGIN USER CART-SHOPING HASTA AQUÍ VA --------------------*/
+
+/*HHEADIN AQUI  --------------------------------------------*/
+
+.heading {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  *background: #0d0f26;
+  *background: #2d2e37;
+  background: #1c1c1c;
+  padding: 15px;
+  border: 1px solid hsl(200 100% 99% / 5%);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.heading-title {
+  color: #b7b7b7;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/*formulario de contacto para email */
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 15px;
+  color: var(--bg-color);
+  background: #1c1c1c;
+  border-radius: 0.4rem;
+}
+
+.contact-form .send-btn {
+  width: 120px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 12px;
+  background: #1c1c1c;
+  cursor: pointer;
+}
+
+.contact-form .send-btn:hover {
+  background: #151515;
+  transition: 0.3s all linear;
+}
+
+/*responsive del formulario de contacto */
+
+@media screen and (max-width: 768px) {
+  .contact h2 {
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+  .contact-form .send-btn {
+    font-size: 1rem;
+  }
+}
+
+/*COPYRIGTH  -------------------------------*/
+
+.copyright {
+  text-align: center;
+  padding: 60px;
+}
+
+.copyright span {
+  color: orangered;
+  font-weight: bold;
+}
+.copyright span:hover {
+  color: red;
+
+  text-decoration: underline;
+}
+
+/*REDES DE PAGINA CONTACTO     -------------------------------------------------------------*/
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+.redes i {
+  color: orangered;
+  margin-left: 10px;
+  font-size: 26px;
+}
+.redes i:hover {
+  color: red;
+}
+
+/*RESPONSIVE -------------------------------*/
+
+@media (max-width: 1060px) {
+  .container {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 518px) {
+  .heading {
+    *padding: 2px 14px;
+  }
+
+  .heading-title {
+    font-size: 1rem;
+  }
+}

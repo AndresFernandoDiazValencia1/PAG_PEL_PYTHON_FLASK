@@ -1,0 +1,274 @@
+/* ESTILOS DE MI PRIMER REGISTRO Y LOGIN... QUE PUTERIA PAPI, POR FIN LO HICE ----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald";
+  text-decoration: none;
+  list-style: none;
+}
+.menu {
+  color: #ffffff;
+  font-weight: bold;
+  *background: #1c1c1c;
+  width: 100vw;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  *box-shadow: 0 6px 6px 0 orangered;
+}
+.lif {
+  border-radius: 3px;
+}
+.logo {
+  color: orangered;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 0 80px;
+  cursor: pointer;
+}
+.logo:hover {
+  color: red;
+}
+.logo2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 40px;
+  border-radius: 8px;
+  box-shadow: 0 6px 6px 6px rgb(175, 62, 21);
+}
+.logo3 {
+  margin-left: 10%;
+  border-radius: 8px;
+  box-shadow: 0 6px 6px 6px rgb(175, 62, 21);
+}
+.logo4 {
+  margin-top: 30px;
+  margin-left: 21%;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 4px rgb(175, 62, 21);
+}
+.menu-opc {
+  display: flex;
+  margin-right: 80px;
+}
+.menu-opc li {
+  margin: 0 5px;
+}
+.menu-opc li a {
+  color: orangered;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 7px 13px;
+  display: block;
+}
+.menu-opc li a:hover {
+  color: rgb(252, 38, 38);
+}
+.menu-opc li:hover {
+  background: rgba(0, 0, 0, 0.44);
+  *border: 3px solid orangered;
+  *transition: 0.4s;
+  *color: rgb(252, 99, 43);
+  border-radius: 8px;
+}
+.form {
+  width: 400px;
+  height: 450px;
+  margin-left: 21%;
+  padding: 70px 0;
+  *display: flex;
+  text-align: center;
+  *box-sizing: border-box;
+  *border: 3px solid rgb(192, 13, 192);
+  *border-radius: 8px;
+}
+.form_titulo {
+  color: #ffffff;
+}
+.form label {
+  margin: 0;
+  padding: -15px -40px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+}
+
+.form_input {
+  width: 92%;
+  height: 35px;
+  color: #ffffff;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.44);
+  border: 3px solid orangered;
+  border-radius: 8px;
+}
+.form button,
+.entrada button {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 15px;
+  text-align: center;
+  border: 3px solid orangered;
+  color: orangered;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.form button:hover {
+  background: rgba(0, 0, 0, 0.44);
+}
+
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px;
+}
+.registro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px;
+  margin-left: 20%;
+}
+body {
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/p1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body:before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  *background: linear-gradient(to right, #d9a7c7, #fffcdc);
+  opacity: 0;
+  z-index: -1;
+}
+.entrada {
+  position: absolute;
+  margin-top: 200px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.inicio {
+  width: 700px;
+  margin: 220px auto;
+  color: plum;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.44);
+  box-shadow: 0 6px 6px 9px orangered;
+  border-radius: 8px;
+}
+.inicio:hover {
+  color: pink;
+  box-shadow: 0 6px 6px 9px rgb(203, 28, 209);
+}
+.inicio button {
+  width: 90px;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  color: black;
+  background: plum;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.inicio button a {
+  font-size: 18px;
+  font-weight: bold;
+}
+.inicio button:hover {
+  background: pink;
+}
+.entrada button {
+  padding: 10px 12px;
+  *width: 90px;
+  border: 3px solid orangered;
+  color: orangered;
+  font-weight: bold;
+  background: none;
+  *background: #1c1c1c;
+  border-radius: 8px;
+}
+
+.entrada button:hover {
+  background: orangered;
+  color: #1c1c1c;
+}
+.home2 {
+  margin: 0;
+  background-image: url("../img/portada.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home2 {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #00f260, #0575e6);
+  opacity: 0.4;
+  z-index: -1;
+}
+@media screen and (max-width: 1239px) {
+  .login {
+    max-width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    *overflow: hidden;
+  }
+  .form {
+    *margin: 0;
+    *align-items: center;
+    *justify-content: center;
+  }
+  .registro {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    *display: grid;
+    *grid-template-columns: 1fr;
+    *padding: 15px;
+    *margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 738px) {
+  .menu {
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .login {
+    *overflow: hidden;
+  }
+}

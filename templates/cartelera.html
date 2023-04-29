@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cartelera</title>
+    <link rel="stylesheet" href="../static/css/cartelera.css" />
+    <link rel="stylesheet" href="../static/css/conexion_API_p.css" />
+    <link rel="shortcut icon" href="../static/img/l1.jpg" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--link de fontawesome---------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!--hasta aquí ------>
+
+    <!-- Swiper JS -el link del primer slide de la pagina servicios--------------------------------->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- hasta aquí -------------------------------->
+  </head>
+  <body>
+    <header>
+      <div class="up">
+        <!--<a href="#"><img src="img/h2.jpg" class="logot" alt=""></a>-->
+        <a href="/" class="logo">MAVENS</a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/cartelera">Cartelera</a></li>
+            <li><a href="/peliculas">Peliculas</a></li>
+            <li><a href="/registro">registro</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="other-links">
+        <button id="btn-login"><a href="/login">Inicio</a></button>
+        <button id="btn-signup"><a href="/registro">Registro</a></button>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+
+    <!--SECCIÓN PELÍCULAS  CONEXIÓN A API TMDB-------------------------------->
+    <section>
+      <div class="heading-p">
+        <h2 class="heading-title">Peliculas y series exitosas 2023</h2>
+      </div>
+
+      <div class="contenedor" id="contenedor"></div>
+    </section>
+    <footer>
+      <div class="paginacion">
+        <button id="btnAnterior">Anterior</button>
+        <button id="btnSiguiente">Siguiente</button>
+      </div>
+      <div class="copyright">
+        <p>
+          &#169; Pagina creada por:
+          <a
+            href="https://api.whatsapp.com/send?phone=573123353062&text=Hola, estoy interesado en una pagina."
+            target="_blank"
+            ><span>Andrés Diaz.</span></a
+          >
+          Todos los derechos reservados.
+        </p>
+        <p>| TMDB | AGRADECIMIENTOS, CREDITOS.</p>
+      </div>
+      <!-- REDES SOCIALES -------------------------------------------------->
+      <div class="redes">
+        <li>
+          <a
+            href="https://api.whatsapp.com/send?phone=573138032210&text=Hola, me interesa el servicio."
+            target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </li>
+        <li>
+          <a href="mailto:ffonte422@gmail.com" target="_blank"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </li>
+      </div>
+    </footer>
+
+    <!--ENSAYO DE CONEXIÓN A LAS PELÍCULAS  HASTA AQUÍ -------------------------------->
+
+    <!--SECCIÓN PELÍCULAS HASTA AQUÍ -------------------------------->
+
+    <script src="../static/js/cartelera.js"></script>
+    <script src="../static/js/conexion_API_p.js"></script>
+  </body>
+</html>
